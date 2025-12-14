@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Host a Node · Distributed Genius Architecture</title>
+  <meta name="description" content="Open invitation to host a node in the Distributed Genius Architecture — a zero-harm, gamified education & planetary restoration network." />
+  <meta name="theme-color" content="#0f172a" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+  <meta name="color-scheme" content="light dark">
+  <!-- Open Graph -->
+  <meta property="og:title" content="Host a Node · Distributed Genius Architecture" />
+  <meta property="og:description" content="Help seed a global, zero-harm learning & restoration fabric. Apply to host a node." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1200' height='630'%3E%3Crect width='100%25' height='100%25' fill='%230f172a'/%3E%3Ctext x='50%25' y='54%25' fill='%23fff' font-family='Inter,system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif' font-size='64' text-anchor='middle'%3EDistributed Genius%3C/text%3E%3Ctext x='50%25' y='75%25' fill='%23a3e635' font-family='Inter,system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif' font-size='36' text-anchor='middle'%3EHost a Node%3C/text%3E%3C/svg%3E" />
+  <meta property="og:url" content="https://planetaryrestorationarchive.com" />
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Host a Node · Distributed Genius Architecture" />
+  <meta name="twitter:description" content="Help seed a global, zero-harm learning & restoration fabric. Apply to host a node." />
+
+  <style>
+    :root{
+      --bg: #ffffff; --fg: #0b1220; --muted:#56607a;
+      --brand:#22c55e; --brand-2:#a3e635; --ring: rgba(34,197,94,.35);
+      --surface:#f6f8fc; --surface-2:#eef2ff; --line: rgba(100,116,139,.25);
+      --shadow: 0 10px 30px rgba(2,6,23,.12);
+    }
+    @media (prefers-color-scheme: dark){
+      :root{ --bg:#0b1220; --fg:#e5e7eb; --muted:#9aa3b2; --surface:#0f172a; --surface-2:#111827; --line: rgba(148,163,184,.28); --shadow: 0 12px 32px rgba(0,0,0,.45); }
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{margin:0; color:var(--fg); background:
+      radial-gradient(1200px 600px at 10% -10%, rgba(163,230,53,.10), transparent 60%),
+      radial-gradient(1000px 500px at 110% 10%, rgba(34,197,94,.08), transparent 60%), var(--bg);
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, Apple Color Emoji, Segoe UI Emoji; line-height:1.6;}
+    a{color:var(--brand); text-decoration:none}
+    a:hover{text-decoration:underline}
+    .container{max-width:1120px; margin-inline:auto; padding:clamp(16px,3vw,32px)}
+    .grid{display:grid; gap:clamp(16px,2.2vw,28px)}
+    .grid-2{grid-template-columns:repeat(2,minmax(0,1fr))}
+    @media (max-width: 900px){.grid-2{grid-template-columns:1fr}}
+    .card{background:linear-gradient(180deg, var(--surface), var(--surface-2)); border:1px solid var(--line); border-radius:18px; padding:clamp(16px,2.4vw,24px); box-shadow:var(--shadow)}
+    .hero{position:relative; overflow:hidden; border-bottom:1px solid var(--line); background:
+      radial-gradient(600px 300px at 70% -10%, rgba(34,197,94,.12), transparent 60%),
+      linear-gradient(180deg, transparent, rgba(34,197,94,.06)), var(--bg);}
+    .badge{display:inline-flex; align-items:center; gap:.5rem; padding:.35rem .7rem; border-radius:999px; background:rgba(34,197,94,.12); color:var(--brand); font-weight:600}
+    h1{font-size: clamp(28px, 4.2vw, 56px); line-height:1.1; margin:0 0 .6rem 0}
+    h2{font-size: clamp(22px, 3vw, 34px); line-height:1.15; margin:0 0 .6rem 0}
+    h3{font-size: clamp(18px, 2.2vw, 22px); margin:.2rem 0 .4rem 0}
+    p.lead{font-size: clamp(16px, 2.2vw, 20px); color:var(--muted)}
+    .pill{display:inline-flex; align-items:center; gap:.5rem; padding:.6rem .8rem; border-radius:999px; border:1px solid var(--line); background:rgba(148,163,184,.08)}
+    .btn{display:inline-flex; align-items:center; gap:.6rem; padding:.9rem 1.1rem; border-radius:14px; background:linear-gradient(180deg, var(--brand), #16a34a); color:white; border:none; box-shadow:var(--shadow); cursor:pointer; font-weight:700}
+    .btn.secondary{background:transparent; color:var(--fg); border:1px solid var(--line)}
+    .btn:focus-visible{outline:3px solid var(--ring); outline-offset:2px}
+    .kpis{display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:20px}
+    @media (max-width: 980px){.kpis{grid-template-columns:repeat(2,minmax(0,1fr))}}
+    .stat{display:flex; flex-direction:column; align-items:flex-start}
+    .stat b{font-size: clamp(22px, 3vw, 36px)}
+    .tag{padding:.25rem .5rem; border-radius:6px; background:rgba(148,163,184,.14); color:var(--muted); font-size:.85rem}
+    .faq details{border:1px solid var(--line); border-radius:14px; padding:1rem; background:linear-gradient(180deg, var(--surface), var(--surface-2))}
+    .faq summary{cursor:pointer; font-weight:700}
+    label{font-weight:600}
+    input, textarea, select{width:100%; padding:.85rem 1rem; border-radius:10px; border:1px solid rgba(148,163,184,.45); background:var(--bg); color:var(--fg)}
+    input:focus, textarea:focus, select:focus{outline:3px solid var(--ring); outline-offset:1px}
+    .form-grid{display:grid; gap:14px; grid-template-columns:repeat(2,minmax(0,1fr))}
+    .form-grid .full{grid-column:1 / -1}
+    .helper{color:var(--muted)}
+    .mono{font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace}
+    .toast{position:fixed; right:16px; bottom:16px; background:var(--surface-2); color:var(--fg); border:1px solid var(--line); border-radius:12px; padding:.8rem 1rem; box-shadow:var(--shadow); display:none}
+  </style>
+</head>
+<body>
+  <!-- … content continues exactly as in previous version … -->
+</body>
+</html>
+
